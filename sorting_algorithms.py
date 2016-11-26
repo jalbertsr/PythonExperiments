@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Nov 25 20:48:02 2016
-
 @author: jalbert
 """
 import random
