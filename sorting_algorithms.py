@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 @author: jalbert
+Implementation of three sorting algorithms with complexity 0(n^2) and the comparasion of time execution between them. 
 """
+
 import random
 from time import time
 
