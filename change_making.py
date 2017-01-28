@@ -1,7 +1,14 @@
 #!/usr/bin/env python
 
 """
+@author: jalbert
 
+The change-making problem addresses the following question:
+how can a given amount of money be made with the least number of coins of given denominations? 
+It is a knapsack type problem, and has applications wider than just currency.
+
+We resolve this in three different ways, recursion, memoritzation and dynamic programming.
+It also should be able to be resolved by intger programming, I'll work on it to bring it to you.
 """
 
 class change_making:
