@@ -1,14 +1,19 @@
 #!/usr/bin/env python
 
 """
-If you dont put your personal data here, the submission will not be accepted
-Group    : 511
-Subgroup : 10
-Name 1: Hanks Campana Cheel
-NIU  1: 1368476
-Name 2: Joan Albert Segura Rueda
-NIU  2: 1395001
-Remarks:
+The knapsack problem or rucksack problem is a problem in combinatorial optimization: 
+Given a set of items, each with a weight and a value, determine the number of each item to include in a collection 
+so that the total weight is less than or equal to a given limit and the total value is as large as possible. 
+It derives its name from the problem faced by someone who is constrained by a fixed-size knapsack 
+and must fill it with the most valuable items.
+
+The problem often arises in resource allocation where there are financial constraints and is studied in fields such as 
+combinatorics, computer science, complexity theory, cryptography, applied mathematics, and daily fantasy sports.
+
+In this case we have a knapsack with (id=0, w=4, v=12), (id=1, w=6, v=10),(id=2, w=5, v=8),(id=3, w=7, v=11), (id=4, w=3, v=14),
+(id=5, w=1, v=7), (id=6, w=6, v=9) where w is whight and v is value, the maximum weight of the napsack is 18. 
+We can resolve this problem with 3 different ways, brute force,recursion and dynamic programming, going from less optimal to
+more optimal. 
 """
 class Knapsack:
     def __init__(self, max_weight=7, items=[]):
