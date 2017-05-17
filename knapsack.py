@@ -10,11 +10,19 @@ and must fill it with the most valuable items.
 The problem often arises in resource allocation where there are financial constraints and is studied in fields such as 
 combinatorics, computer science, complexity theory, cryptography, applied mathematics, and daily fantasy sports.
 
+While the decision problem is NP-complete, the optimization problem is NP-hard, its resolution is at least as difficult as 
+the decision problem, and there is no known polynomial algorithm which can tell, given a solution, whether it is optimal.
+We know that the knapsack problem can be solved in O(nW)complexity by dynamic programming.(n = number of items. W = maximum volume) 
+O(nW) looks like a polynomial time, but it is not, it is pseudo-polynomial. 
+Time complexity measures the time that an algorithm takes as function of the length in bits of its input. 
+The dynamic programming solution is indeed linear in the value of W but exponential in the length of W (and that's what matters).
+
 In this case we have a knapsack with (id=0, w=4, v=12), (id=1, w=6, v=10),(id=2, w=5, v=8),(id=3, w=7, v=11), (id=4, w=3, v=14),
 (id=5, w=1, v=7), (id=6, w=6, v=9) where w is whight and v is value, the maximum weight of the napsack is 18. 
 We can resolve this problem with 3 different ways, brute force,recursion and dynamic programming, going from less optimal to
 more optimal. 
 """
+
 class Knapsack:
     def __init__(self, max_weight=7, items=[]):
         """ Constructor
